@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    font-family: 'Lato';
+}
+
+.user {
+    padding-top: 50px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(1,1,1);
+background: linear-gradient(90deg, rgba(1,1,1,1) 0%, rgba(48,48,48,1) 37%, rgba(56,56,56,1) 70%, rgba(79,79,79,1) 97%);
+    color: #fff;
+    width: 100%;
+    gap: 20px;
+}
+
+.user svg {
+    height: 200px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 999px;
+}
+
+.publicaciones {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.publicaciones h4 {
+    font-size: 22px;
+}
+
+.publicaciones p {
+    font-size: 20px;
+}
+
+.publicaciones svg {
+    height: 30px;
+}
+
+.dashboard {
+    width: 45vw;
+    height: 50vh;
+    overflow-y: scroll;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.header-dash {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    height: 40px;
+    padding: 5px;
+    padding-left: 20px;
+    gap: 10px;
+}
+
+.trabajo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+}
+
+.publicacion {
+    display: flex;
+    border: solid;
+    border-width: 15px;
+    border-radius: 15px;
+    padding: 5px;
+    border-color: #000;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.publicacion svg:hover {
+    color: #FF0000;
+    cursor: pointer;
+}
+
+.notificaciones {
+    width: 45vw;
+    height: 50vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow-y: scroll;
+}
+
+.header-noti {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    height: 40px;
+    padding: 5px;
+    padding-left: 20px;
+    gap: 10px;
+}
+
+.notificacion {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+}
+
+.noti {
+    border: solid;
+    border-width: 15px;
+    border-radius: 15px;
+    padding: 5px;
+    border-color: #000;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.all {
+    padding-left: 5vw;
+    padding-bottom: 5vh;
+}
+
+.crear {
+    width: 90vw;
+    height: fit-content;
+    border: solid;
+    border-width: 1px;
+    border-radius: 30px;
+}
+
+.crear svg {
+    height: 30px;
+}
+
+.header-crear {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    height: 40px;
+    padding: 5px;
+    padding-left: 20px;
+    gap: 10px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.datos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 30vw;
+}
+
+.datos input {
+    border: none;
+    border-bottom: 2px solid #000;
+    padding: 5px;
+    height: 40px;
+    width: 100%;
+}
+
+.datos input:focus {
+    outline: none;
+}
+
+.datos select {
+    padding: 5px;
+    height: 40px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.desc {
+    width: 100%;
+}
+
+.desc textarea {
+    padding: 5px;
+    height: 120px;
+    width: 100%;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+}
+
+.submit input {
+    padding: 5px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    width: 300px;
+    cursor: pointer;
+}
+
+.todo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}

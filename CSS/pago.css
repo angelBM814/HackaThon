@@ -1,0 +1,303 @@
+#union {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    background: rgb(249, 219, 212);
+}
+
+section {
+    margin-top: 120px;
+    margin-bottom: 20px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+#contProd {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section h2 {
+    color: black;
+    width: 100%;
+    text-align: center;
+    margin: 20px auto;
+    font-size: 40px;
+}
+
+.producto {
+    width: 30%;
+    height: 400px;
+    margin: 10px auto;
+    border-radius: 10px;
+    background: white;
+}
+
+.producto img {
+    width: 100%;
+    height: 50%;
+    border-bottom: 2px solid lightgray;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.datos {
+    width: 90%;
+    height: 50%;
+    padding: 0 20px;
+}
+
+p,
+input {
+    color: black;
+}
+
+.producto h4 {
+    color: grey;
+    text-decoration: line-through;
+    margin: 0;
+}
+
+.precio {
+    display: flex;
+    align-items: center;
+}
+
+.producto h3 {
+    color: black;
+    font-size: 25px;
+    margin: 5px 15px 10px 0;
+    display: inline-block;
+}
+
+.nProd {
+    text-align: center;
+    font-size: 16px;
+}
+
+span {
+    color: rgb(255, 175, 0);
+    display: inline-block;
+    margin-right: 15px;
+}
+
+aside {
+    margin-top: 120px;
+    margin-bottom: 20px;
+    width: 20%;
+    height: fit-content;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+aside img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+aside a {
+    color: rgb(255, 175, 0);
+    margin: 0;
+}
+
+aside p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.but,
+button {
+    text-align: center;
+    background: #432ca7;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 15px auto;
+    display: block;
+    width: 49%;
+}
+
+#compra {
+    display: block;
+}
+
+#head {
+    display: flex;
+    align-items: center;
+}
+
+#head img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+form * {
+    color: black;
+}
+
+form {
+    display: block;
+    margin: 0 auto;
+}
+
+form input,
+select {
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    background: none;
+    border-bottom: 2px solid #432ca7;
+}
+
+#dPers,
+#direc {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+#dPers input {
+    display: inline-block;
+    width: 32%;
+}
+
+#direc input {
+    display: inline-block;
+    width: 220px;
+}
+
+#direc select {
+    display: inline-block;
+    width: 100px;
+}
+
+#pTargeta {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+form .but {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px;
+    width: 49.8%;
+    color: white;
+}
+
+form input,
+select:focus {
+    outline: none;
+}
+
+#ticket {
+    height: fit-content;
+    width: 95%;
+    margin: 0 auto;
+    background: white;
+    border-radius: 25px;
+    padding: 15px;
+    display: block;
+}
+
+#ticket input {
+    width: 100%;
+}
+
+.p {
+    color: red;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+#tarjeta * {
+    font-family: Montserrat;
+}
+
+#tarjeta {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#tarjeta img {
+    width: 50px;
+    height: auto;
+}
+
+#front,
+#tras {
+    width: 45%;
+    height: 225px;
+    background: rgb(230, 230, 230);
+    display: inline-block;
+    border-radius: 25px;
+    padding: 20px 10px;
+    box-shadow: -7px 7px 10px lightgrey;
+}
+
+#tarj_N,
+#tarj_N2 {
+    font-size: 25px;
+    text-align: center;
+}
+
+#tarj_Fecha,
+#tarj_Fecha2 {
+    text-align: center;
+}
+
+#linea {
+    width: 100%;
+    height: 30px;
+    background: black;
+    margin-top: 15px;
+}
+
+#cvv {
+    width: 70%;
+    height: 30px;
+    background: white;
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#tarj_N2,
+#tarj_Fecha2,
+#dueño2 {
+    transform: scaleX(-1);
+}
+
+#total {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#total * {
+    color: red;
+    text-align: center;
+    font-size: 18px;
+    display: inline-block;
+}
+
+textarea {
+    width: 95%;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    background: none;
+    border: 5px solid white;
+    border-radius: 25px;
+    padding: 15px;
+    font-size: 18px;
+}
+
+::placeholder {
+    color: black;
+}

@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body{
+    font-family: 'Lato';
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.user {
+    padding-top: 50px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(1,1,1);
+background: linear-gradient(90deg, rgba(1,1,1,1) 0%, rgba(48,48,48,1) 37%, rgba(56,56,56,1) 70%, rgba(79,79,79,1) 97%);
+    color: #fff;
+    width: 100%;
+    gap: 20px;
+}
+
+.user svg {
+    height: 200px;
+    color: #d5d6ff;
+    background-color: #fff;
+    color: #000;
+    border-radius: 999px;
+}
+
+.publicaciones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3%;
+}
+
+.publicaciones h4 {
+    font-size: 22px;
+}
+
+.publicaciones p {
+    font-size: 20px;
+}
+
+.publicaciones svg {
+    height: 30px;
+}
+
+.dashboard {
+    width: 45vw;
+    height: 60vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.header-dash {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    height: 40px;
+    padding: 5px;
+    padding-left: 20px;
+    gap: 10px;
+}
+
+.trabajo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+}
+
+.publicacion {
+    border: solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-width: 15px;
+    border-radius: 15px;
+    padding: 5px;
+    border-color: #000;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.notificaciones {
+    width: 45vw;
+    height: 60vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.header-noti {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    height: 40px;
+    padding: 5px;
+    padding-left: 20px;
+    gap: 10px;
+}
+
+.notificacion {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+}
+
+.noti {
+    border: solid;
+    border-width: 15px;
+    border-radius: 15px;
+    padding: 5px;
+    border-color: #000;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.contraseña {
+    border: solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-width: 15px;
+    border-radius: 15px;
+    padding: 5px;
+    border-color: #000;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.mostrar {
+    display: none;
+}
+
+.show h5 {
+    color: #432ca7;
+    text-decoration: underline;
+    font-size: 16px;
+    cursor: pointer;
+}
+.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.show h5:hover {
+    color: #504c4d;
+}
+.show h6{
+    font-size: 16px;
+    color: #24194d;
+    cursor: pointer;
+}
+.show h6:hover{
+    text-decoration: underline;
+    color: #292627;
+}
+
+.cambio h5 {
+    color: #504c4d;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cambio h5:hover {
+    text-decoration: underline;
+    color: #292627;
+}
+
+#visible {
+    display: none;
+}
+
+.cambiar {
+    background-color: #fff;
+    display: none;
+    flex-direction: column;
+    width: 45vw;
+    height: 60vh;
+    box-shadow: rgba(0, 0, 0, 0.5) 10px 10px 0px 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.txt-cambiar {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background: rgb(67,64,113);
+background: linear-gradient(90deg, rgba(67,64,113,1) 0%, rgba(114,160,191,1) 28%, rgba(68,170,215,1) 57%, rgba(76,212,240,1) 100%);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.switch {
+    display: flex;
+    align-items: center;
+}
+
+.cambiar svg {
+    height: 30px;
+}
+
+.form {
+    flex-direction: column;
+    margin-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 50px;
+    display: flex;
+    gap: 30px;
+}
+
+.form input {
+    padding-left: 20px;
+    width: 95%;
+    height: 50px;
+    font-size: 20px;
+}
+
+.buttons-form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10px;
+    height: 50px;
+    width: 200px;
+    border-radius: 80px;
+    background-color: #432ca7;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}

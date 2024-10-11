@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa con Latitud y Longitud en Marcadores</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+        #returnBtn {
+            margin: 10px;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tu Ubicación en el Mapa</h1>
+    <button id="returnBtn">Regresar a mi Ubicación</button>
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        // Inicializar el mapa
+        const map = L.map('map').setView([40.7128, -74.0060], 12); // Centrar en Nueva York
+
+        // Capa de OpenStreetMap
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '© OpenStreetMap'
+        }).addTo(map);
+
+        let userLocation; // Variable para almacenar la ubicación del usuario
+
+        // Array de marcadores (coordenadas y nombres)
+        const markers = [
+            { coords: [40.7128, -74.0060], name: 'Marcador 1' }, // Nueva York
+            { coords: [40.730610, -73.935242], name: 'Marcador 2' }, // Otro lugar en Nueva York
+            { coords: [40.650002, -73.949997], name: 'Marcador 3' }  // Otro lugar en Nueva York
+        ];
+
+        // Añadir marcadores al mapa
+        markers.forEach(marker => {
+            L.marker(marker.coords).addTo(map)
+                .bindPopup(`${marker.name}<br>Latitud: ${marker.coords[0]}<br>Longitud: ${marker.coords[1]}`);
+        });
+
+        // Función para mostrar la ubicación del usuario
+        function showPosition(position) {
+            userLocation = [position.coords.latitude, position.coords.longitude];
+            map.setView(userLocation, 15); // Centrar en la ubicación del usuario
+            L.marker(userLocation).addTo(map)
+                .bindPopup('Estás aquí<br>Latitud: ' + userLocation[0] + '<br>Longitud: ' + userLocation[1])
+                .openPopup();
+        }
+
+        // Manejar errores de geolocalización
+        function handleError() {
+            alert("No se pudo obtener la ubicación. Asegúrate de que el GPS esté habilitado.");
+        }
+
+        // Intentar obtener la ubicación del usuario
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition, handleError);
+        } else {
+            alert("Geolocalización no soportada por este navegador.");
+        }
+
+        // Función para regresar a la ubicación del usuario
+        document.getElementById('returnBtn').onclick = function() {
+            if (userLocation) {
+                map.setView(userLocation, 15); // Centrar en la ubicación del usuario
+            } else {
+                alert("La ubicación del usuario no está disponible.");
+            }
+        };
+    </script>
+</body>
+</html>

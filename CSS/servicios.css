@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    font-family: 'Lato';
+}
+
+main {
+    padding: 2%;
+}
+
+.imagen img {
+    height: 100px;
+}
+
+
+.map img {
+    height: 100px;
+}
+
+.productos {
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.contenedor {
+    padding: 30px;
+}
+
+.producto {
+    border-radius: 20px;
+    width: 25vw;
+    height: 400px;
+    padding: 10px;
+    background: linear-gradient(#7ca2b4, #d2dfe5);
+    margin-bottom: 60px;
+}
+
+.producto h3 {
+    font-weight: 500;
+    font-size: 23px;
+}
+
+.producto h4 {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.header-producto {
+    gap: 20px;
+    display: flex;
+    height: 150px;
+}
+
+.txt-header {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.txt-header h4 {
+    margin-top: 5px;
+}
+
+.producto img {
+    border-radius: 20px;
+    height: 150px;
+    width: 150px;
+}
+
+.descrip {
+    padding-top: 20px;
+    height: 120px;
+}
+
+.boton {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.boton button {
+    font-size: 16px;
+    padding: 5px;
+    height: 30px;
+    width: 50%;
+    background-color: #5c869b;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.search input {
+    font-size: 16px;
+    padding: 10px;
+    width: 50%;
+}
+
+.search svg {
+    height: 30px;
+}
+
+.search input {
+    width: 500px;
+}

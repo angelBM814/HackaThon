@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+body{
+    font-family: 'Lato';
+}
+.servicios {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+.servicios h3 {
+    color: #ad77f8;
+}
+
+.txt-servicio {
+    width: 300px;
+}
+
+.txt-servicio p {
+    font-size: 30px;
+}
+
+.acciones {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.market {
+    width: 300px;
+}
+
+.seguro {
+    width: 300px;
+}
+
+.pagos {
+    width: 300px;
+}
+
+.servicios svg {
+    height: 150px;
+    color: #301b97;
+}
+
+@media (max-width: 500px) {
+    .acciones {
+        gap: 30px;
+    }
+
+    .servicios svg {
+        height: 80px;
+    }
+}
+
+/*////////Section///////*/
+#info {
+    margin: 0;
+    padding: 50px;
+    height: 500px;
+    background: linear-gradient(180deg, rgba(87, 61, 131, 0.2), rgba(86, 24, 105, 0.8)), url("../IMG/fondo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+h1 {
+    font-family: 'Cinzel';
+    font-size: 45px;
+    font-weight: normal;
+    text-indent: 25px;
+    text-size-adjust: 10px;
+    letter-spacing: 15px;
+}
+
+#info button {
+    width: 200px;
+}
+
+span {
+    color: #5238ef;
+}
+/*Footer*/
+
+.footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #f9f5ff;
+}
+
+.footer ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+}
+
+.footer h3 {
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.footer img {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}

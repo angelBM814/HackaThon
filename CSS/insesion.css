@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body{
+    font-family: 'Lato';
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    height: 100vh;
+    
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    width: 300px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 50px;
+}
+
+.form h1 {
+    font-size: 35px;
+    margin: 0;
+}
+
+.form p {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.datos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.datos p {
+    margin-top: 0;
+    font-size: 16px;
+    text-align: st;
+    color: #301b97;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.datos p:hover {
+    background-color: #e9eafe;
+    border-radius: 10px;
+    text-decoration: underline;
+    width: 62%;
+}
+
+.datos input {
+    height: 40px;
+    width: 100%;
+}
+
+.btn {
+    height: 50px;
+    background-color: #5238ef;
+    border: none;
+    color: #fff;
+    border-radius: 100px;
+    cursor: pointer;
+}
